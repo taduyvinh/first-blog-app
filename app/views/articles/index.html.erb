@@ -10,7 +10,6 @@
                <%= form_tag(articles_path, :method => "get", id: "search-form") do %>
                 <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
                 <%= submit_tag "Search" %>
-
             <% end %>
             </form>
         </nav>
@@ -26,19 +25,24 @@
   <div class="row">
      
       <div class="col-sm-8">
+        <% if @articles.present? %>
+          <% @articles.each do |article|  %>
+          <div class="card">
+            <div class="card-block">
+               <h4 class="card-title"><%= article.title %></h4>
+               <p class="card-text"><%= @markdown.render(article.body).html_safe %> </p>
+            </div>
+            <div class="card-footer">
+              <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning' %>
+              <%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-warning' %>
 
-        <% @articles.each do |article|  %>
-        <div class="card">
-          <div class="card-block">
-             <h4 class="card-title"><%= article.title %></h4>
-             <p class="card-text"><%= @markdown.render(article.body).html_safe %> </p>
+            </div>
           </div>
-          <div class="card-footer">
-            <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning' %>
-            <%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-warning' %>
-
-          </div>
-        </div>
+          <% end %>
+        <% else %>
+          <p>
+            There are no posts containing the term(s) <%= params[:search] %>.
+          </p>
         <% end %>
       </div>
   </div>

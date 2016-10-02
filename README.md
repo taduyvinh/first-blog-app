@@ -36,9 +36,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough 
 
 
-![Video Walkthrough](http://i.imgur.com/lVSOvg3.gifv)
+[Video Walkthrough](http://i.imgur.com/lVSOvg3.gifv)
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [LiceCap](http://i.imgur.com/lVSOvg3.gifv).
 
 ## Notes
 

@@ -255,13 +255,6 @@ Commontator.configure do |config|
   #   true  (mentions enabled)
   # Default: false
   config.mentions_enabled = false
-  require "active_record/commentator"
-
-ActiveRecord::Commentator::Configuration.paths = [
-  /#{Rails.root.join("app").to_s}|#{Rails.root.join("lib").to_s}/
-]
-ActiveRecord::Base.connection.class.prepend(ActiveRecord::Commentator)
-
   # user_mentions_proc
   # Type: Proc
   # Arguments:

@@ -19,7 +19,6 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'redcarpet'
 gem 'commontator', '~> 4.11.1'
 gem 'rails_12factor', group: 'production'
-gem 'activerecord-commentator'
 gem 'pg', group: 'production'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

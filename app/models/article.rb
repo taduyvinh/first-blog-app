@@ -1,9 +1,6 @@
 class Article < ApplicationRecord
-	
-def self.search(search)
+  acts_as_commontable
+  def self.search(search)
     where("title LIKE ?", "%#{search}%")
-end
-
-
-acts_as_commontable
+  end
 end

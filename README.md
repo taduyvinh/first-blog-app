@@ -1,24 +1,61 @@
-# README
+# Pre-work - Myapp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+Myapp is a Ruby on Rails blog application.
 
-* System dependencies
+Submitted by: Ta Duy Vinh
 
-* Configuration
+Time spent: 9 hours spent in total
 
-* Database creation
+URL: https://secure-anchorage-83120.herokuapp.com/
 
-* Database initialization
+## User Stories
 
-* How to run the test suite
+The following **required** functionality is complete:
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* [x] User can create a new post, formatted using the Markdown language.
+* [x] User can edit an existing post.
+* [x] There is one post that introduces the App Creator with name, picture.
+* [x] User can delete stories, with an alert that asks the user to confirm.
+* [x] User see a search form on the Posts page.
+* [x] User can submit a search term to find all posts bywith titles containing the search term.
 
-* ...
+The following **optional** features are implemented:
+* [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
+* [ ] User can see how many views a post has. 
+* [ ] User can leave a comment on a post.
+* [ ] User can add "tags" to a post, and filter posts by tag. 
+
+
+The following **additional** features are implemented:
+
+- [ ] List anything else that you can get done to improve the app functionality!
+
+## Video Walkthrough 
+
+
+![Video Walkthrough](/path/to/your/gif/file)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+## License
+
+    Copyright [yyyy] [name of copyright owner]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
